@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.game-board {
+  width: 100%;
+  height: 80vh;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  z-index: 1;
+  /* logica é de right 0 ao 100 */
+  /* right: 0; */
+  left: none;
+  animation: pipeAnimation 1.6s linear infinite;
+}
+
+@keyframes pipeAnimation {
+  from {
+    right: -80px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+.mario {
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+}
+
+/* se quiser que pule, adicione a class jump */
+.jump {
+  animation: marioPular 0.9s ease-in-out;
+}
+
+@keyframes marioPular {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 35%;
+  }
+  60% {
+    bottom: 35%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.cloud {
+  position: absolute;
+  width: 550px;
+  animation: cloudAnimation 8s ease-in infinite;
+}
+
+@keyframes cloudAnimation {
+  0% {
+    left: 200%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.name-game {
+  height: 15vh;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 3rem;
+  background-color: rgb(35, 160, 35);
+}
+
+.game-over {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 1rem;
+  color: red;
+  text-align: center;
+  background-color: #e0f6ff;
+  border-radius: 20%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.game-over p {
+  font-size: 2.5rem;
+}
+
+.restart {
+  cursor: pointer;
+}
+
+.caixa {
+  position: absolute;
+  right: 10vw;
+  top: 5vh;
+  background: #e0f6ff;
+  border: 1px solid black;
+  padding: 0.2rem 1rem;
+  z-index: 3;
+}
+.maiorPontuacao {
+  top: 10vh;
+}

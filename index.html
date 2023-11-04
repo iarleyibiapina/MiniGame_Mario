@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario jump</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-board">
+      <span class="caixa">Pontuação: <strong class="pontuacao">0</strong></span>
+      <span class="caixa maiorPontuacao"
+        >Maior Pontuação: <strong>0</strong></span
+      >
+      <span class="game-over"
+        ><p>GAME OVER</p>
+        <span class="restart" onclick="reload()"><p>Restart?</p></span></span
+      >
+      <img src="img/clouds.png" alt="cloud-image" class="cloud" />
+      <img src="img/pipe.png" alt="pipe-image" class="pipe" />
+      <img src="img/mario.gif" alt="mario" class="mario" />
+    </div>
+    <div class="name-game">
+      <h1>Super Mario</h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
