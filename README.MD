@@ -1,5 +1,9 @@
 Um projeto simples e para praticar um pouco de html,css e javascript.
 
+<img src="img/inicio.png">
+
+<img src="img/game-over-print.png">
+
 Onde seguindo o tutorial do canal 'Manual do Dev',
 Link:
 https://www.youtube.com/watch?v=r9buAwVBDhA&list=PLFie3VxXISbV3k9NPr-wXlk6CU4ypOIBt&index=82&ab_channel=ManualdoDev
